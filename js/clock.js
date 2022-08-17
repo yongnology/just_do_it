@@ -61,8 +61,9 @@ function setClock() {
         var mm = d.getMonth()+1;
         var da = d.getDate();
 
-        document.getElementById("time").innerHTML =h + " : " + m + " : " + s;
         document.getElementById("date").innerHTML =y + "년 " + mm + "월 " + da + "일";
+        document.getElementById("time").innerHTML =h + " : " + m /*+ " : " + s*/;
+        document.getElementById("sec").innerHTML ="&nbsp: "+s;
 }
 function modifyNumber(time) {
     if(parseInt(time)<10){
@@ -70,6 +71,7 @@ function modifyNumber(time) {
     } else 
         return time;
 }
+
 window.onload = function() {
     setClock();
     setInterval(setClock, 1000)

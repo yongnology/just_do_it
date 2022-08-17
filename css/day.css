@@ -18,7 +18,7 @@
     position: absolute;
     right: -300px;
     width: 560px;
-    height: 560px;
+    height: 630px;
 }
 .half_2 .note {
     position: absolute;
@@ -198,6 +198,7 @@ section.index_clock {
     padding: 15px;
     left: 200px;
     width: 500px;
+    height: 90px;
     left: 30px;
     border: 3px solid #555;
     background-color: #333;
@@ -208,5 +209,83 @@ section.index_clock {
     font-size: 20px;
     line-height: 30px;
     color: #fff;
-    
+}
+.now{
+    display: inline-block;
+    width: 100px;
+    position: relative;
+}
+.d_clock #time{
+    float: left;
+}
+#sec {
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    top: 0;
+    position: absolute;
+    text-align: center;
+    left: 50px;
+}
+.p_title, #form {
+    position: relative;
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: 'Jua',sans-serif;
+}
+.p_note{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 10px;
+    opacity: 0.3;
+    width: 460px;
+    height: 520px;
+    background-color: yellow;
+    overflow: scroll;
+}
+#itemList li {
+    position: relative; /* 추가할 때마다 자기자리 찾아 갈 수 있도록 */
+    cursor: pointer; /* pointer : 손모양*/
+    font-size: 18px;
+    transition: all 0.2s;
+}
+#itemList ul li {
+    padding-top: 8px;
+    color: #111;
+    font-weight: bold;
+    z-index: 100;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 25px;
+}
+#itemList .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px;
+    border: none;
+    background-color: rgba(255,255,255,0.2);
+}
+#itemList .close:hover {
+    background-color: #f12574;
+    color: #fff;
+}
+/* 목록 */
+#item {
+    padding: 10px 10px;
+    margin-left:30px;
+    margin-top: 30px;
+    width: 300px;
+    border: 2px solid #222;
+    border-radius: 10px;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 20px;
+}
+#add {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    font-family: 'Jua',sans-serif;
+    font-size: 20px;
 }

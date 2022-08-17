@@ -7,36 +7,29 @@
     font-size: 14px;
 }
 body {
+    background-color: #3d72bb;
     background-color: #1F2937;
-}
-p {
-    background-color: #374151;
-}
-input {
-    background-color: #374151;
-    color: #fff;
 }
 .wrap {
     margin-bottom: 30px;
 }
-
 #memberArea {
     width: 630px;
     height: 800px;
     position: relative;
     margin: 0 auto;
     padding: 10px;
-    top: 100px;
 }
-#memberArea h1 {
+/* #memberArea h1 {
     display: block;
     font-size: 30px;
     line-height: 150px;
     text-align: center;
     border-bottom: solid 8px #777;
     margin-bottom: 30px;
-}
+} */
 #memberArea h2 {
+    margin-top: 30px;
     font-size: 1.5em;
     font-family: 'Gamja Flower', cursive;
     text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
@@ -56,10 +49,14 @@ fieldset {
     position: absolute;
     left: -9999px;
 }
+.joinForm{
+    padding: 30px;
+    background-color: #888;
+    border-radius: 30px;
+}
 .formSign {
     text-align: right;
     margin: 30px 0 10px;
-    background-color: #1F2937;
 }
 .require{
     display: inline-block;
@@ -131,17 +128,12 @@ a.idCheck, a.findZipcode {
     transition: all 0.2s;
 }
 a.idCheck:hover , a.findZipcode:hover {
-    background-color: #1F2937;
     color: #fff;
 }
 a.findZipcode {
     position: absolute;
     left: 230px;
     top: 10px;
-}
-input#adress {
-    display: block;
-    margin: 0;
 }
 .labelAddress{
     line-height: 50px;
@@ -174,8 +166,17 @@ input#adress {
 .btnJoinArea .btnOk {
     background: linear-gradient(to bottom, rgba(98,98,98,1) 0%, rgb(98,98,98) 50%, rgb(81,81,81) 100%);
 }
+.btnJoinArea .btnOk:hover {
+    background: linear-gradient(to bottom, rgb(81,81,81) 0%, rgb(98,98,98) 50%, rgba(98,98,98,1) 100%);
+    font-weight: bold;
+}
 .btnJoinArea .btnCancel {
-    background: linear-gradient(to bottom, rgba(145,145,145,0.8) 0%, rgb(145,145,145) 50%) rgb(81,81,81) 100%;
+    /* background: linear-gradient(to bottom, rgba(145,145,145,0.8) 0%, rgb(145,145,145) 50%) rgb(81,81,81) 100%; */
+    background: linear-gradient(to bottom, rgba(98,98,98,1) 0%, rgb(98,98,98) 50%, rgb(81,81,81) 100%);
+}
+.btnJoinArea .btnCancel:hover {
+    background: linear-gradient(to bottom, rgb(81,81,81) 0%, rgb(98,98,98) 50%, rgba(98,98,98,1) 100%);
+    font-weight: bold;
 }
 
 @font-face { /* 내 브라우저를 방문하면 폰트를 다운받고 보여지게끔 함*/
@@ -407,4 +408,13 @@ footer .inner .upper {
 }
 .lower p {
     display: block;
+}
+#adress {
+    width: 350px;
+}
+input {
+    padding: 10px 0;
+}
+.white-f {
+    color: white;
 }

@@ -17,7 +17,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/clock.js"></script>
-    
+    <script src="js/day.js"></script>
     <script>
     </script>
 
@@ -73,26 +73,26 @@
                     <div>
                         <div class="d_clock">
                             <div id="date" class="date"></div>
-                            <div id="time" class="time"></div>
+                            <div class="now">
+                                <div id="time" class="time"></div>
+                                <div id="sec" class="sec"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="half_2">
-                    <img src="img/note.png" alt="">
-                    <div class="note">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
+                    <div class="p_title">
+                        <p>오늘 할 일</p>
+                    </div>
+                    <img src="img/note2.png" alt="">
+                    <div id="form">
+                        <input type="text" id="item" autofocus="true" placeholder="오늘 할 일을 입력해주세요">
+                        <button type="button" id="add" class="addBtn">추가</button>
+                    </div>
+                    <div class="p_note">
+                        <div id="itemList">
+                
+                        </div>
                     </div>
                 </div>
             </div>
